@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'K2D';
+    src: url(font/K2D/K2D-Regular.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: K2D;
+}
+
+#desktop {
+    display: none;
+}
+
+#mobile {
+    display: block;
+    background-color: #E2E2E2;
+    margin: 0px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    height: auto;
+    align-content: center;
+}
+
+nav ul :first-child  {
+    height: 50px;
+    width: auto;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+nav ul li img {
+    height: auto;
+    width: auto;
+    align-self: center;
+}
+
+nav {
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+#main_slider img{
+    width: 100svw;
+    height: 92svh;
+    object-fit: none;
+    object-position: center;
+}
+
+#current_slider {
+    position: relative;
+    bottom: 55px;
+    width: 100svw;
+    height: 50px;
+    display: flex;
+}
+
+.progresBox_default {
+    height: 6px;
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progresBox_curent {
+    height: 3px;
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border: 3px solid rgb(0, 0, 0);
+    
+}
+
+#featured h2 {
+    margin: 0px 15px 20px 10px;
+    padding-left: 10px;
+    border-bottom: 3px solid black;
+    font-size: x-large;
+}
+
+.square {
+    position: relative;
+    top: 5px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.square-1 {
+    position: relative;
+    left: 10px;
+    top: -25px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+#news {
+    width: 100%;
+    justify-self: center;
+}
+
+
+
+#news img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#slides h2{
+    margin: 0px 15px 20px 10px;
+    padding-left: 10px;
+    border-bottom: 3px solid black;
+    font-size: x-large;
+    font-family: K2D;
+    margin-top: 60px;
+}
+
+#CPU {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    position: relative;
+    justify-self: center;
+}
+
+#CPU img {
+    width: 100%;
+    height: 100%;
+}
+
+#CPU-main {
+    margin: -15px 0px 20px 0px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: large;
+}
+
+#CPU-titlu {
+    font-size: x-large;
+    font-weight: 600;
+    margin: 0px 15px 20px 10px;
+    padding-left: 10px;
+    border-bottom: 3px solid black;
+}
+
+#CPU button {
+    margin-left: 70%;
+    margin-bottom: 10px;
+    color: white;
+    background-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+#CPU:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.slidecontainer {
+    margin-top: 20px;
+    width: 90%;
+    justify-self: center;
+}
+  
+ 
+.slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+ 
+.slider:hover {
+    opacity: 1;
+}
+  
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 70px;
+    height: 13px;
+    border-radius: 5px;
+    background: #888888; 
+    cursor: pointer; 
+}
+  
+.slider::-moz-range-thumb {
+    width: 70px;
+    height: 13px;
+    border-radius: 5px;
+    background: #04AA6D; 
+    cursor: pointer; 
+}
+
+
+
+@media (min-width: 600px) {
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+        background-color: whitesmoke;
+        margin: 0px;
+        padding: 10px;
+        border-bottom: 2px solid black;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+    }
+}
