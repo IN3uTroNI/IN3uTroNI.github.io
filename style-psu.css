@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'K2D';
+    src: url(font/K2D/K2D-Regular.ttf);
+}
+
+body {
+    font-family: 'K2D';
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+.containere {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.product-info {
+    display: flex;
+    gap: 2rem;
+}
+
+.product-info img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.details {
+    flex: 1;
+}
+
+.download-section {
+    margin-top: 2rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.btn-download {
+    background-color: #e50000;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #c40000;
+}
