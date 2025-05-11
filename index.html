@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="icons/LOGO_4.png">
+        <title>NeuTroN Software</title>
+    </head>
+    <body>
+        <header>
+            <nav id="mobile">
+                <ul>
+                    <li>
+                        <img src="icons/LOGO-removebg-preview.png" alt="logo">
+                    </li>
+                    <li>
+                        <div id="this" class="container" onclick="ShowHide(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                          </div>
+                    </li>
+                </ul>
+            </nav>
+
+              <div id="Menu" class="open">
+                <h2 id="element" class="text-animation"><a href="#mobile">Home</a></h2>
+                <h2 id="element" class="text-animation2"><a href="#featured">News</a></h2>
+                <h2 id="element" class="text-animation3"><a href="#slides">Software</a></h2>
+                <h2 id="element" class="text-animation4"><a href="#3">Support</a></h2>
+              </div>
+        </header>
+        <div id="main_slider">
+            <div id="current_slider">
+                <div id="1" class="progresBox_default progresBox_curent"></div>
+                <div id="2" class="progresBox_default"></div>
+                <div id="3" class="progresBox_default"></div>
+                <div id="4" class="progresBox_default"></div>
+            </div>
+        </div>
+        <article id="featured">
+            <h2>Featured<div class="square"></div></h2>
+            <div id="news">
+                <img src="img/AI-chip-3213.webp" alt="">
+            </div>
+        </article>
+        <section id="slides">
+            <h2>Software for<div class="square"></div></h2>
+            <div class="carousel">
+                <div class="slides1">
+                    <div class="slide">
+                        <article id="CPU">
+                            <img src="img/cpu.webp" alt="">
+                            <p id="CPU-titlu">Cpu <div class="square-1"></div></p>
+                            <p id="CPU-main">Better management of resources for faster response time and ordered use of ram. 
+                                With integration and support for a wide range of applications.</p>
+                            <div id="button-more">
+                                <button>VIEW MORE</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="slide">
+                        <article id="CPU">
+                            <img src="img/gpu2.webp" alt="">
+                            <p id="CPU-titlu">Gpu <div class="square-1"></div></p>
+                            <p id="CPU-main">Better enhancement of graphics while maintaining fidelity to the orginal quality of the image. 
+                                With integration and support for a wide range of applications.</p>
+                            <div id="button-more">
+                                <button>VIEW MORE</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="slide">
+                        <a href="psu.html">
+                        <article id="CPU">
+                            <img src="img/Psu.webp" alt="">
+                            <p id="CPU-titlu">Psu <div class="square-1"></div></p>
+                            <p id="CPU-main">Provides the abily to chose form different presets of power management, 
+                                with visual input and interactive enviromment easy to use and manage.</p>
+                            <div id="button-more">
+                                <button>VIEW MORE</button>
+                            </div>
+                        </article>
+                        </a>
+                    </div>
+                </div>
+                <div class="slidecontainer">
+                    <input value="0" class="slider" id="myRange" type="range" min="0" max="20" class="slider" onchange="slideTo(this.value)">
+                </div>
+            </div>
+        </section>
+        <footer id="contact">
+            <p>Join the community</p>
+            <input type="email" id="text-input">
+            <p>Contact and follow us</p>
+            <div id="logoes">
+                <a href=""><img src="icons/whatsapp.png" alt=""></a>
+                <a href="https://github.com/IN3uTroNI"><img src="icons/github.png" alt=""></a>
+                <a href=""></a><img src="icons/instagram.png" alt=""></a>
+            </div>
+            <div id="end">
+                <img src="icons/LOGO_4.png" alt="">
+                <h4>Copyright © 2025 NeuTroN Software. All rights reserved.</h4>
+            </div>
+        </footer>
+    <script src="scripts.js"></script>
+    </body>
+</html>
+
