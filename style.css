@@ -363,6 +363,7 @@ nav ul li {
     padding-bottom: 10px;
     border-radius: 10px;
     border-width: 0px;
+    margin-right: 10px;
 }
 
 #CPU:hover {
