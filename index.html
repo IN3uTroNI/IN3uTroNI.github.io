@@ -33,7 +33,6 @@
 
                 </ul>
             </nav>
-
               <div id="Menu" class="open">
                 <h2 id="element" class="text-animation"><a href="#mobile">Home</a></h2>
                 <h2 id="element" class="text-animation2"><a href="#featured">Featured</a></h2>
@@ -43,16 +42,26 @@
         </header>
         <div id="main_slider">
             <div id="current_slider">
-                <div id="1" class="progresBox_default progresBox_curent"></div>
-                <div id="2" class="progresBox_default"></div>
-                <div id="3" class="progresBox_default"></div>
-                <div id="4" class="progresBox_default"></div>
+                <div id="1" class="progresBox_default progresBox_curent" onclick="changeSlide_byIndex(0)"></div>
+                <div id="2" class="progresBox_default" onclick="changeSlide_byIndex(1)"></div>
+                <div id="3" class="progresBox_default" onclick="changeSlide_byIndex(2)"></div>
+                <div id="4" class="progresBox_default" onclick="changeSlide_byIndex(3)"></div>
             </div>
         </div>
         <article id="featured">
             <h2>Featured<div class="square"></div></h2>
             <div id="news-m">
                 <img src="img/NVIDIA-vs-AMD-GPUs.webp" alt="">
+                <h2>NVIDIA vs AMD Drivers</h2>
+                <p>When it comes to GPU drivers, NVIDIA is generally praised for its stability, broader compatibility, and more 
+                    frequent updates—especially for new game releases. Its GeForce Experience software also offers convenient features 
+                    like automatic game optimization and driver management.</p>
+                <p>AMD, on the other hand, has made significant improvements in recent years. Its Adrenalin software provides robust 
+                    customization options, performance monitoring, and features like Radeon Boost and Anti-Lag. While AMD drivers used 
+                    to have a reputation for inconsistency, recent updates have narrowed the gap considerably.</p>
+                <p>Overall, NVIDIA leads in reliability and polish, especially in professional and gaming contexts, while AMD offers 
+                    competitive performance with strong customization tools, often at better value.</p>
+                <a href="NVA.html"><button id="button-qwe" type="button">Read More</button></a>
             </div>
             <div id="news-w">
                 <a href="https://www.amd.com/en/support/download/drivers.html">
@@ -122,18 +131,18 @@
                     </div>
                 </div>
                 <div class="slidecontainer">
-                    <input value="0" class="slider" id="myRange" type="range" min="0" max="20" class="slider" onchange="slideTo(this.value)">
+                    <input value="0" class="slider" id="myRange" type="range" min="0" max="20" onchange="slideTo(this.value)">
                 </div>
             </div>
         </section>
         <footer id="contact">
             <p>Join the community</p>
-            <input type="email" id="text-input">
+            <input type="email" id="text-input" placeholder="Enter your email...">
             <p>Contact and follow us</p>
             <div id="logoes">
                 <a href=""><img src="icons/whatsapp.png" alt=""></a>
                 <a href="https://github.com/IN3uTroNI"><img src="icons/github.png" alt=""></a>
-                <a href=""></a><img src="icons/instagram.png" alt=""></a>
+                <a href=""><img src="icons/instagram.png" alt=""></a>
             </div>
             <div id="end">
                 <img src="icons/LOGO_4.png" alt="">

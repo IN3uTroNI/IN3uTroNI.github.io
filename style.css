@@ -18,6 +18,29 @@ a{
     color: black;
 }
 
+#button-qwe {
+    margin: 20px 15px 15px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: gray;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    border: 1px solid gray;
+}
+
+#button-qwe:hover {
+    background-color: #E2E2E2;
+    color: black;
+    border: 1px solid gray;
+    transition: all 0.3s ease-in-out;
+}
+
+
 #descktop {
     display: none;
 }
@@ -196,9 +219,11 @@ nav ul li {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.3;
 }
 
 .progresBox_curent {
+    opacity: 0.6;
     height: 3px;
     width: 20%;
     background-color: white;
@@ -206,8 +231,12 @@ nav ul li {
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
     
+}
+
+#featured {
+    margin-top: 30px;
 }
 
 #featured h2 {
@@ -240,9 +269,28 @@ nav ul li {
 }
 
 #news-m {
-    display: contents;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-self: center;
+    justify-content: center;
+    
+}
+
+#news-m p {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    font-size: large;
+    font-weight: 600;
+}
+
+#news-m h2 {
+    margin: 30px 15px 20px 10px;
+    padding: 0px 10px 0px 10px;
+    border-bottom: 3px solid black;
+    font-size: x-large;
+    margin-bottom: 30px;
 }
 
 #news-w {
@@ -255,6 +303,10 @@ nav ul li {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+#slides {
+    margin-bottom: 30px;
 }
 
 #slides h2{
@@ -300,11 +352,11 @@ nav ul li {
     flex: wrap;
     height: auto;
     justify-content: end;
+    padding-top: auto;
 }
 
+
 #CPU button {
-    margin-bottom: 15px;
-    margin-right: 15px;
     color: white;
     background-color: gray;
     padding-top: 10px;
@@ -314,12 +366,12 @@ nav ul li {
 }
 
 #CPU:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 20px 0 rgba(0,0,0,0.19);
 }
 
 
 .slidecontainer {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 90%;
     justify-self: center;
 }
@@ -362,7 +414,7 @@ nav ul li {
 }
 
 #contact {
-    margin: 60px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     border-top: 2px solid black;
     justify-items: center;
 }
@@ -422,7 +474,7 @@ nav ul li {
 }
 
 #end img {
-    margin: 20px 0px 5px 0px;
+    margin: 20px 0px 5px 0px;;
 }
 
 .carousel {
@@ -533,16 +585,36 @@ footer {
 
     .carousel {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 30%));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 30%));
         justify-content: center;
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 60px;
     }
     
     #CPU {
-        padding-bottom: 20px;
+        display: grid;
+        padding-bottom: 10px;
+        grid-row: 1 / 2;
+        grid-template-rows: auto 1fr; 
+        height: 100%;
+    }
+
+    #slides1 {
+        height: 100%;
+    }
+
+    #CPU-main {
+        height: auto;
     }
 
     #CPU button {
         margin-top: 25px;
+        margin-right: 5px;
+    }
+
+    #slides {
+        height: auto;
     }
 
 
@@ -550,6 +622,7 @@ footer {
     .slidecontainer {
         display: none;
     }
+
 
     #slides h2{
         font-size: xx-large;
@@ -561,8 +634,8 @@ footer {
     }
 
     #CPU:hover {
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        transform: scale(1.01);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 0px 40px 0 rgba(0,0,0,0.19);
+        transform: scale(1.005);
         transition: all 0.3s ease-in-out;
     }
 
@@ -609,21 +682,26 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 45%);
         justify-content: center;
-        height: auto;
+        height: 100%;
     }
 
     #news-a-1, #news-a-2 {
         margin: 25px 20px 5px 20px;
         border: black 2px solid;
         border-radius: 10px;
-        min-height: 500px;
-        max-height: fit-content;
+        min-height: 100%;
     }
 
     #news-a-1 p, #news-a-2 p {
         padding-left: 10px;
         padding-right: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
+    }
+
+    #button-more button:hover {
+        background-color: #E2E2E2;
+        color: black;
+        transition: all 0.3s ease-in-out;
     }
 
 

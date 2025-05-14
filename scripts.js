@@ -36,12 +36,18 @@ slider.prepend(imgElement);
 function changeSlide() {
     currentIndex = (currentIndex + 1) % images.length;
     imgElement.src = images[currentIndex];
-    tempIndex = (tempIndex + 1) % elements.length;
-    if (elements[tempIndex].classList.contains('progresBox_default')) {
-        elements[tempIndex].classList.add('progresBox_curent');
-        elements[tempIndex1].classList.remove('progresBox_curent');
-    }
-    tempIndex1 = tempIndex;
+
+    elements.forEach(element => {
+        element.classList.remove('progresBox_curent');
+    });
+
+    elements[currentIndex].classList.add('progresBox_curent');
+}
+
+
+function changeSlide_byIndex(index) {
+    currentIndex = index-1; 
+    changeSlide();
 }
 
 // delay de 3 secunde

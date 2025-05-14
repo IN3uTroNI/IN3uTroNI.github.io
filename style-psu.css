@@ -10,6 +10,8 @@ html {
 body {
     font-family: 'K2D';
     background-image: url('img/13416.webp');
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
     margin: 0;
     padding: 0;
     max-width: 1080px;
@@ -105,8 +107,8 @@ h1 {
 
 .details {
     flex: 1;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .download-section {
@@ -157,7 +159,6 @@ a{
 .container {
     display: inline-block;
     cursor: pointer;
-    margin-right: 5px;
 }
 
 .bar1, .bar2, .bar3 {
@@ -185,7 +186,7 @@ a{
 #Menu {
     justify-items: center;
     height: 30svh;
-    width: 100svw; 
+    width: 100%; 
     background-color: #E2E2E2; 
     display: none;
     max-width: 1076px;
@@ -316,13 +317,13 @@ footer {
     background-color: #E2E2E2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .product-info {
         display: grid;
         grid-row: 1 / 2;
         flex-direction: row;
-        width: 100svw;
+        width: 100%;
         justify-items: center;
     }
 
@@ -339,7 +340,7 @@ footer {
     #Menu {
         justify-items: center;
         height: 92svh;
-        width: 100svw; 
+        width: 100%; 
         background-color: #E2E2E2; 
         display: none;
         border: none;
@@ -361,6 +362,9 @@ footer {
     }
 
     #end {
+        display: grid;
+        grid-template-rows: 1 / 2;
+        justify-items: center;
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
     }
