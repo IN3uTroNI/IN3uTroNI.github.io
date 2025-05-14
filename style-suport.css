@@ -334,6 +334,10 @@ nav ul li {
 
 }
 
+#main_form h1 {
+    border-top: #000000 solid 2px;
+}
+
 h1 {
     margin: 0px;
     padding: 20px 0px 0px 10px;
