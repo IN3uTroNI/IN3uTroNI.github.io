@@ -334,9 +334,6 @@ nav ul li {
 
 }
 
-#faq h2 {
-    border-top: #000000 solid 2px;
-}
 
 h1 {
     margin: 0px;
@@ -365,6 +362,7 @@ h3 {
 #faq h2 {
     grid-area: 1 / 1 / 2 / 3;
     padding-left: 30px;
+    border-top: #000000 solid 2px;
 }
 
 #faq h3 {
